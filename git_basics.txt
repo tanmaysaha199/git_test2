@@ -22,6 +22,10 @@ git diff
 git show
 
 
+Command to add commit if not used (-m)
+git commit -> git config --global core.editor "code --wait"
+
+
 Message writing convention for git
 
 * Separate subject from body with a blank line
