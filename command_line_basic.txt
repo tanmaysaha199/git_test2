@@ -1,0 +1,45 @@
+pwd 	: shows current directory
+pwd -P	: shows current directory with symlink resolved
+
+
+ls 	: list files and folders in current directory
+ls -a	: list all files and folder including hiden in current directory
+ls -l	: list files size in current directory
+ls -lh	: list files size in kb, mb, gb etc
+ls -lS	: sorts files according to size
+ls -lht : sorts files according to time it's created
+ls -lr	: sorts files name alphabetically in reverse order
+
+
+ln a.txt b.txt		: hard links b.txt to a.txt
+ln -f a.txt b.txt	: forces linke from b.txt to a.txt
+ln -s a.txt b.txt	: symlinks from b.txt to a.txt (Symlink can create link between two directories or files)
+
+
+cd Documents	: changes directory to Documents
+cd ..		: goes back to parent directory
+cd		: goes back to home directory
+
+
+cp a.txt b.txt				: makes a copy of a.txt named b.txt
+cp a.txt /home/tanmay/Desktop/b.txt	: makes a copy of a.txt in Desktop directory named b.txt
+cp *.txt /home/tanmay/Desktop		: copies multiple files having file extension as .txt from present directory to Desktop
+cp -v a.txt b.txt			: verbose copy
+cp -i a.txt b.txt			: asks permission before overwritting file
+cp -f a.txt b.txt			: force copy 
+cp -Rv /home/tanmay/Documents   /home/tanmay/Desktop	: copies directory Documents to Desktop
+
+
+mkdir a	: makes directory called a
+mkdir -p a/b/c	: makes nested directory
+mkdir -v a	: makes verbose directory 
+
+mv -v a.txt b.txt : moves contents of a.txt to b.txt
+
+rm -v a.txt 			: removes file a.txt
+rm -r /home/tanmay/test	: removes directory named test even if it contains files	
+
+
+Ctrl + shift + c to copy and ctrl + shift + v to paste
+tab completion to autocomplete
+code /home/tanmay/test/command_line.txt to open file from command line VS code.
