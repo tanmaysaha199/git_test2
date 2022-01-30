@@ -1,0 +1,36 @@
+Create Repository in Github
+
+github.com -> top right + button pushdown "new repository" -> set name and create -> Under code tab -> Under code drop down menu copy SSH link
+->mkdir <foldername> in terminal-> cd <foldername> ->git clone <SSH code> -> cd <gitfolder> -> git remote -v -> should fetch SSH link
+
+
+Commands related to a remote repository:
+
+git clone git@github.com:USER-NAME/REPOSITORY-NAME.git
+git push or git push origin main (Both accomplish the same goal in this context)
+
+
+Commands related to workflow:
+git add .
+git commit -m "A message describing what you have done to make this snapshot different"
+
+
+Commands related to checking status or log history
+git status
+git log
+git diff
+git show
+
+
+Message writing convention for git
+
+* Separate subject from body with a blank line
+* Limit the subject line to 50 characters
+* Capitalize the subject line
+* Do not end the subject line with a period
+* Use the imperative mood in the subject line
+    If applied, this commit will <your subject line here>
+    eg: If applied, this commit will refactor subsystem X for readability       :Correct
+    eg: If applied, this commit will fixed bug with Y     :Wrong
+* Wrap the body at 72 characters
+* Use the body to explain what and why vs. how
