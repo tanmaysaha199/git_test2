@@ -1,0 +1,11 @@
+Create paragraph
+<p> text </p>
+
+Create bold
+<strong> text </strong>
+
+Create italic
+<em> text </em>
+
+Create comment
+<!------------comment--------------->
