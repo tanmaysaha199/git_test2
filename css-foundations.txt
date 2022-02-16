@@ -1,0 +1,65 @@
+4 Basic selectors arranged based on their precedence
+
+* Universal selectors
+    * {color: purple;}
+* Type selectors
+    div {background-color:green;}
+* Class selectors
+    .class {text-alig: center}
+* ID selectors
+    # ID {font-weight: bold}
+
+
+Grouping selectors
+.class1, .class2{font-size: 14px;}
+helps in applying font-size to both .class1 and .class2
+
+Chaining selectors
+.class1.class2{text-family = "Times New Roman";}
+only applies text-family to elements that contains both .class1 and .class2
+
+Descendant combinator
+.ancestor #child {text-color: red;}
+(nesting) only applies red to parent class1 having child id as id1
+
+
+Some basic properties
+color:
+background-color:
+font-family:
+font-weight:
+font-size:
+text-align:
+
+How not to lose propotion of image when adjusting size
+img {
+  height: auto;
+  width: 500px;
+}
+
+
+Rules for precedence in CSS 
+* any no. of id selectors> any no. of class selectors >any no. of Type selectors > Universal selectors
+* When no declaration has a selector with a higher specificity, a larger amount of a single selector will beat a smaller amount of that same selector.
+* special symbols or combinators (+, ~, >, empty space, no space, *) do not add any precedence. 
+* if an inherited item is specifically declared then it well get precedence over parent 
+* Whichever rule was last defined is the winner in case every other factor is same.
+
+
+How to add css to html
+
+External CSS
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+Internal CSS
+<head>
+    <style>
+    </style>
+</head>
+
+Inline CSS
+<body>
+  <div style="color: white; background-color: black;">...</div>
+</body>
